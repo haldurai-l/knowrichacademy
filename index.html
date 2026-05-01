@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KRA</title>
 
- 
-</head>
-<body>
-<body>
-Hello
-  
-  
-<html>
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-box">
+                <h2>500+</h2>
+                <p>Students Trained</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>25+</h2>
+                <p>Courses Offered</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>50+</h2>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>10+</h2>
+                <p>Industry Collaborations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Start your learning journey today.</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>KnowRich Academy</h3>
+            <p>Building Skills. Creating Innovators.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <p class="copyright">
+                © 2026 KnowRich Academy. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
