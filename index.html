@@ -238,8 +238,7 @@
     <footer>
         <div class="footer-content">
 			<p align="right">Total Visitors: <span id="visitor-count">Loading...</span></p>
-            hi
-			<h3>KnowRich Academy</h3>
+            <h3>KnowRich Academy</h3>
             <p>Empowering Minds</p>
 
             <div class="social-icons">
@@ -276,6 +275,16 @@
             overlay.classList.remove('show');
         });
     });
+
+		fetch("https://api.counterapi.dev/v1/www.knowrichacademy.in/visits/up")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("visitor-count").textContent = data.count;
+  })
+  .catch(error => {
+    document.getElementById("visitor-count").textContent = "N/A";
+    console.error(error);
+  });
 </script>
 
 </body>
