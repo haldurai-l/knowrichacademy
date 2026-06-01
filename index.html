@@ -218,7 +218,8 @@
 </section>
 
     <!-- Contact -->
-   <section class="contact section" id="contact">
+   
+           <section class="contact section" id="contact">
     <div class="container">
         <div class="section-title">
             <h2>Contact Us</h2>
@@ -226,26 +227,35 @@
         </div>
 
         <form class="contact-form"
-              action="https://formsubmit.co/knowrichacademy@gmail.com"
+              action="https://api.web3forms.com/submit"
               method="POST">
 
-            <input type="hidden" name="_subject" value="New Enquiry from Website">
-           <!-- <input type="hidden" name="_captcha" value="false">-->
+            <!-- Replace with your Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="f2f58865-fd2b-4d86-9ada-0f7b3cec41d6">
 
-            <input type="text"
-                   name="name"
-                   placeholder="Your Name"
-                   required>
+            <!-- Email Subject -->
+            <input type="hidden" name="subject" value="New Enquiry from Website">
 
-            <input type="email"
-                   name="email"
-                   placeholder="Your Email"
-                   required>
+            <!-- Redirect after successful submission -->
+            <input type="hidden" name="redirect" value="https://YOUR_USERNAME.github.io/thankyou.html">
 
-            <textarea name="message"
-                      rows="5"
-                      placeholder="Your Message"
-                      required></textarea>
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required></textarea>
 
             <button type="submit" class="btn">
                 Send Message
@@ -253,6 +263,7 @@
         </form>
     </div>
 </section>
+
 
     <!-- Footer -->
     <footer>
