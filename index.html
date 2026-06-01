@@ -226,37 +226,36 @@
             <p>Start your learning journey today.</p>
         </div>
 
-        <!-- Success Message -->
-        <div id="successMessage"
-             style="display:none; color:green; text-align:center; margin-bottom:15px;">
-            ✅ Thank you! Your message has been sent successfully.
-        </div>
-
-        <form id="contactForm"
-              class="contact-form"
-			 action="https://api.web3forms.com/submit"
+        <form class="contact-form"
+              action="https://api.web3forms.com/submit"
               method="POST">
 
-            <input type="hidden" name="access_key"
-                   value="f2f58865-fd2b-4d86-9ada-0f7b3cec41d6">
+            <!-- Replace with your Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="f2f58865-fd2b-4d86-9ada-0f7b3cec41d6">
 
-            <input type="hidden" name="subject"
-                   value="New Enquiry from Website">
+            <!-- Email Subject -->
+            <input type="hidden" name="subject" value="New Enquiry from Website">
 
-            <input type="text"
-                   name="name"
-                   placeholder="Your Name"
-                   required>
+            <!-- Redirect after successful submission -->
+            <input type="hidden" name="redirect" value="https://www.knowrichacademy.in/thankyou.html">
 
-            <input type="email"
-                   name="email"
-                   placeholder="Your Email"
-                   required>
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
 
-            <textarea name="message"
-                      rows="5"
-                      placeholder="Your Message"
-                      required></textarea>
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required></textarea>
 
             <button type="submit" class="btn">
                 Send Message
