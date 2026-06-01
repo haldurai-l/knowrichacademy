@@ -218,21 +218,41 @@
 </section>
 
     <!-- Contact -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Start your learning journey today.</p>
-            </div>
-
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+   <section class="contact section" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Start your learning journey today.</p>
         </div>
-    </section>
+
+        <form class="contact-form"
+              action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+              method="POST">
+
+            <input type="hidden" name="_subject" value="New Enquiry from Website">
+           <!-- <input type="hidden" name="_captcha" value="false">-->
+
+            <input type="text"
+                   name="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea name="message"
+                      rows="5"
+                      placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
